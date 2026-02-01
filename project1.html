@@ -1,423 +1,506 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project 01 - Movie Details</title>
-    <link rel="stylesheet" href="css/style.css"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body class="bg-darker">
-<nav>
-    <div class="logo-container">
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-darker">
+    <nav>
+      <div class="logo-container">
         <!-- Ganti 'logo-kamu.png' dengan file logomu nanti -->
-        <img src="img/lmbg.jpg" alt="Logo Tenzoska" class="logo-img">
+        <img src="img/lmbg.jpg" alt="Logo Tenzoska" class="logo-img" />
         <div class="logo">TEN<span>ZOSKA</span></div>
-    </div>
-    <ul class="nav-links">
+      </div>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="index.html#perangkat">Perangkat</a></li>
         <li><a href="siswa.html">Siswa</a></li>
         <li><a href="index.html#moments">Moments</a></li>
-    </ul>
-</nav>
+      </ul>
+    </nav>
     <section class="section">
-        <!-- Tombol Back -->
-        <a href="index.html" class="btn-cyber" style="margin-bottom: 2rem; display: inline-flex;">
-            <span class="btn-text"><i class="fa-solid fa-arrow-left"></i> KEMBALI</span>
-        </a>
+      <!-- Tombol Back -->
+      <a
+        href="index.html"
+        class="btn-cyber"
+        style="margin-bottom: 2rem; display: inline-flex"
+      >
+        <span class="btn-text"
+          ><i class="fa-solid fa-arrow-left"></i> KEMBALI</span
+        >
+      </a>
+      <div
+        class="project-header"
+        style="text-align: center; margin-bottom: 4rem"
+      >
+        <h1 class="section-title" style="font-size: 2.5rem">
+          [ PROJECT : DILAN 1990 ]
+        </h1>
+      </div>
+      <!-- TRAILER SECTION -->
+      <div class="trailer-wrapper">
+        <div class="trailer-container">
+          <video
+            class="trailer-video"
+            src="video/dilan1990.mp4"
+            controls
+            poster="img-project/project1.jpg"
+          >
+            Browser kamu tidak mendukung video.
+          </video>
 
-        <div class="project-header" style="text-align: center; margin-bottom: 4rem;">
-            <h1 class="section-title" style="font-size: 2.5rem;">[ PROJECT : DILAN 1990 ]</h1>
-            <p style="color: var(--accent-blue); letter-spacing: 2px;">PRODUCTION CREW & CAST LIST</p>
+          <div class="trailer-overlay">
+            <h2>Official Trailer</h2>
+            <p>DILAN 1990</p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="project-header"
+        style="text-align: center; margin-bottom: 4rem"
+      >
+        <p style="color: var(--accent-blue); letter-spacing: 2px">
+          PRODUCTION CREW & CAST LIST
+        </p>
+      </div>
+
+      <!-- Bagian 1: Behind The Scenes (Kru) -->
+      <h2 class="section-title">
+        <i class="fa-solid fa-clapperboard"></i> Production Team
+      </h2>
+
+      <div class="staff-grid staff-spacing">
+        <!-- DIRECTOR -->
+        <div class="p-card accent-orange">
+          <div class="rank-tag">DIRECTOR</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Sutradara" />
+          </div>
+          <h3>Sutradara</h3>
+          <p>Victoryne Christania Ekklesia</p>
         </div>
 
-        <!-- Bagian 1: Behind The Scenes (Kru) -->
-        <h2 class="section-title">
-  <i class="fa-solid fa-clapperboard"></i> Production Team
-</h2>
+        <!-- SCRIPT WRITERS -->
+        <div class="p-card accent-blue">
+          <div class="rank-tag">SCRIPT</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Penulis Naskah" />
+          </div>
+          <h3>Penulis Naskah</h3>
+          <p>Ni Nyoman Desyana</p>
+        </div>
 
-<div class="staff-grid staff-spacing">
+        <div class="p-card accent-blue">
+          <div class="rank-tag">SCRIPT</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Penulis Naskah" />
+          </div>
+          <h3>Penulis Naskah</h3>
+          <p>Pande Made Cintya Mahadewi</p>
+        </div>
 
-  <!-- DIRECTOR -->
-  <div class="p-card accent-orange">
-    <div class="rank-tag">DIRECTOR</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Sutradara">
-    </div>
-    <h3>Sutradara</h3>
-    <p>Victoryne Christania Ekklesia</p>
-  </div>
+        <!-- CREATIVE TEAM -->
+        <div class="p-card">
+          <div class="rank-tag">CREATIVE TEAM</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Tim Kreatif" />
+          </div>
+          <h3>Tim Kreatif</h3>
+          <p>Benedicta Naomi Widi</p>
+        </div>
 
-  <!-- SCRIPT WRITERS -->
-  <div class="p-card accent-blue">
-    <div class="rank-tag">SCRIPT</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Penulis Naskah">
-    </div>
-    <h3>Penulis Naskah</h3>
-    <p>Ni Nyoman Desyana</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">CREATIVE TEAM</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Tim Kreatif" />
+          </div>
+          <h3>Tim Kreatif</h3>
+          <p>Made Tiara Andina Pramesti</p>
+        </div>
 
-  <div class="p-card accent-blue">
-    <div class="rank-tag">SCRIPT</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Penulis Naskah">
-    </div>
-    <h3>Penulis Naskah</h3>
-    <p>Pande Made Cintya Mahadewi</p>
-  </div>
+        <!-- EQUIPMENT -->
+        <div class="p-card">
+          <div class="rank-tag">EQUIPMENT</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Perlengkapan" />
+          </div>
+          <h3>Perlengkapan</h3>
+          <p>I Gede Umbu Desta Pratama</p>
+        </div>
 
-  <!-- CREATIVE TEAM -->
-  <div class="p-card">
-    <div class="rank-tag">CREATIVE TEAM</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Tim Kreatif">
-    </div>
-    <h3>Tim Kreatif</h3>
-    <p>Benedicta Naomi Widi</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">EQUIPMENT</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Perlengkapan" />
+          </div>
+          <h3>Perlengkapan</h3>
+          <p>I Gede Gada Megantara</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">CREATIVE TEAM</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Tim Kreatif">
-    </div>
-    <h3>Tim Kreatif</h3>
-    <p>Made Tiara Andina Pramesti</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">EQUIPMENT</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Perlengkapan" />
+          </div>
+          <h3>Perlengkapan</h3>
+          <p>I Komang Wistara Arta Ratrianjaya</p>
+        </div>
 
-  <!-- EQUIPMENT -->
-  <div class="p-card">
-    <div class="rank-tag">EQUIPMENT</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Perlengkapan"></div>
-    <h3>Perlengkapan</h3>
-    <p>I Gede Umbu Desta Pratama</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">EQUIPMENT</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Perlengkapan" />
+          </div>
+          <h3>Perlengkapan</h3>
+          <p>Naufal Al-Khalifa Utomo</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">EQUIPMENT</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Perlengkapan"></div>
-    <h3>Perlengkapan</h3>
-    <p>I Gede Gada Megantara</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">EQUIPMENT</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Perlengkapan" />
+          </div>
+          <h3>Perlengkapan</h3>
+          <p>I Made Diva Mahottama Putra</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">EQUIPMENT</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Perlengkapan"></div>
-    <h3>Perlengkapan</h3>
-    <p>I Komang Wistara Arta Ratrianjaya</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">EQUIPMENT</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Perlengkapan" />
+          </div>
+          <h3>Perlengkapan</h3>
+          <p>Putu Bagus Tresna Upadana</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">EQUIPMENT</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Perlengkapan"></div>
-    <h3>Perlengkapan</h3>
-    <p>Naufal Al-Khalifa Utomo</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">EQUIPMENT</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Perlengkapan" />
+          </div>
+          <h3>Perlengkapan</h3>
+          <p>Naradhika Rusman Saputra</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">EQUIPMENT</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Perlengkapan"></div>
-    <h3>Perlengkapan</h3>
-    <p>I Made Diva Mahottama Putra</p>
-  </div>
+        <!-- EDITORS -->
+        <div class="p-card">
+          <div class="rank-tag">EDITOR</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Editor" />
+          </div>
+          <h3>Editor</h3>
+          <p>Putu Rama Satya Mahendra</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">EQUIPMENT</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Perlengkapan"></div>
-    <h3>Perlengkapan</h3>
-    <p>Putu Bagus Tresna Upadana</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">EDITOR</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Editor" />
+          </div>
+          <h3>Editor</h3>
+          <p>Raden Nayla Dewindari Basja</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">EQUIPMENT</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Perlengkapan"></div>
-    <h3>Perlengkapan</h3>
-    <p>Naradhika Rusman Saputra</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">EDITOR</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Editor" />
+          </div>
+          <h3>Editor</h3>
+          <p>I Made Oldi Jaya Kusuma</p>
+        </div>
 
-  <!-- EDITORS -->
-  <div class="p-card">
-    <div class="rank-tag">EDITOR</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Editor"></div>
-    <h3>Editor</h3>
-    <p>Putu Rama Satya Mahendra</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">EDITOR</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Editor" />
+          </div>
+          <h3>Editor</h3>
+          <p>I Komang Rio Jaya Saputra</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">EDITOR</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Editor"></div>
-    <h3>Editor</h3>
-    <p>Raden Nayla Dewindari Basja</p>
-  </div>
+        <!-- CAMERAMEN -->
+        <div class="p-card">
+          <div class="rank-tag">CAMERAMEN</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Kameramen" />
+          </div>
+          <h3>Kameramen</h3>
+          <p>I Made Oldi Jaya Kusuma</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">EDITOR</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Editor"></div>
-    <h3>Editor</h3>
-    <p>I Made Oldi Jaya Kusuma</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">CAMERAMEN</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Kameramen" />
+          </div>
+          <h3>Kameramen</h3>
+          <p>Ni Made Dhea Arista Putri</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">EDITOR</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Editor"></div>
-    <h3>Editor</h3>
-    <p>I Komang Rio Jaya Saputra</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">CAMERAMEN</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Kameramen" />
+          </div>
+          <h3>Kameramen</h3>
+          <p>Victoryne Christania Ekklesia</p>
+        </div>
 
-  <!-- CAMERAMEN -->
-  <div class="p-card">
-    <div class="rank-tag">CAMERAMEN</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Kameramen"></div>
-    <h3>Kameramen</h3>
-    <p>I Made Oldi Jaya Kusuma</p>
-  </div>
+        <!-- FASHION STYLIST -->
+        <div class="p-card">
+          <div class="rank-tag">FASHION STYLIST</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Penata Busana" />
+          </div>
+          <h3>Penata Busana</h3>
+          <p>Ni Putu Nomi Nesa Ardani</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">CAMERAMEN</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Kameramen"></div>
-    <h3>Kameramen</h3>
-    <p>Ni Made Dhea Arista Putri</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">FASHION STYLIST</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Penata Busana" />
+          </div>
+          <h3>Penata Busana</h3>
+          <p>Yowana Dwi Aminara</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">CAMERAMEN</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Kameramen"></div>
-    <h3>Kameramen</h3>
-    <p>Victoryne Christania Ekklesia</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">FASHION STYLIST</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Penata Busana" />
+          </div>
+          <h3>Penata Busana</h3>
+          <p>Ida Ayu Kade Mila Pradewi</p>
+        </div>
 
-  <!-- FASHION STYLIST -->
-  <div class="p-card">
-    <div class="rank-tag">FASHION STYLIST</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Penata Busana"></div>
-    <h3>Penata Busana</h3>
-    <p>Ni Putu Nomi Nesa Ardani</p>
-  </div>
+        <!-- MAKE UP ARTIST -->
+        <div class="p-card">
+          <div class="rank-tag">MAKE UP ARTIST</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Penata Rias" />
+          </div>
+          <h3>Penata Rias</h3>
+          <p>Ni Luh Putu Mutiara Calista Putrawan</p>
+        </div>
+        <div class="p-card">
+          <div class="rank-tag">MAKE UP ARTIST</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Penata Rias" />
+          </div>
+          <h3>Penata Rias</h3>
+          <p>Sharah Ferhat</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">FASHION STYLIST</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Penata Busana"></div>
-    <h3>Penata Busana</h3>
-    <p>Yowana Dwi Aminara</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">MAKE UP ARTIST</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Penata Rias" />
+          </div>
+          <h3>Penata Rias</h3>
+          <p>Luh Putu Putri Dharma Maharani</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">FASHION STYLIST</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Penata Busana"></div>
-    <h3>Penata Busana</h3>
-    <p>Ida Ayu Kade Mila Pradewi</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">MAKE UP ARTIST</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Penata Rias" />
+          </div>
+          <h3>Penata Rias</h3>
+          <p>Ni Made Dwi Febriyanti</p>
+        </div>
+      </div>
 
-  <!-- MAKE UP ARTIST -->
-   <div class="p-card">
-    <div class="rank-tag">MAKE UP ARTIST</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Penata Rias"></div>
-    <h3>Penata Rias</h3>
-    <p>Ni Luh Putu Mutiara Calista Putrawan</p>
-  </div>
-  <div class="p-card">
-    <div class="rank-tag">MAKE UP ARTIST</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Penata Rias"></div>
-    <h3>Penata Rias</h3>
-    <p>Sharah Ferhat</p>
-  </div>
+      <!-- Bagian 2: Daftar Aktor (Cast) -->
+      <h2 class="section-title">
+        <i class="fa-solid fa-masks-theater"></i> Cast / Pemeran
+      </h2>
+      <div class="staff-grid">
+        <!-- MAIN ROLES -->
+        <div class="p-card">
+          <div class="rank-tag" style="background: #e74c3c">MAIN ROLE</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Dilan" />
+          </div>
+          <h3>I Komang Rio Jaya Saputra</h3>
+          <p class="role-name"><i>as</i> Dilan</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">MAKE UP ARTIST</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Penata Rias"></div>
-    <h3>Penata Rias</h3>
-    <p>Luh Putu Putri Dharma Maharani</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag" style="background: #e74c3c">MAIN ROLE</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Milea" />
+          </div>
+          <h3>Ni Putu Diah Rihana Anggia Dewi</h3>
+          <p class="role-name"><i>as</i> Milea</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">MAKE UP ARTIST</div>
-    <div class="p-img-small"><img src="https://via.placeholder.com" alt="Penata Rias"></div>
-    <h3>Penata Rias</h3>
-    <p>Ni Made Dwi Febriyanti</p>
-  </div>
+        <!-- SUPPORTING -->
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Wati" />
+          </div>
+          <h3>Nicola Naomas Damaris Aritonang</h3>
+          <p class="role-name"><i>as</i> Wati</p>
+        </div>
 
-</div>
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Rani" />
+          </div>
+          <h3>Ni Made Dhea Arista Putri</h3>
+          <p class="role-name"><i>as</i> Rani</p>
+        </div>
 
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Piyan" />
+          </div>
+          <h3>I Pande Putu Maheza Suryadistra</h3>
+          <p class="role-name"><i>as</i> Piyan</p>
+        </div>
 
-        <!-- Bagian 2: Daftar Aktor (Cast) -->
-        <h2 class="section-title"><i class="fa-solid fa-masks-theater"></i> Cast / Pemeran</h2>
-       <div class="staff-grid">
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Nandan" />
+          </div>
+          <h3>I Komang Andhika Arya Permana</h3>
+          <p class="role-name"><i>as</i> Nandan</p>
+        </div>
 
-  <!-- MAIN ROLES -->
-  <div class="p-card">
-    <div class="rank-tag" style="background:#e74c3c;">MAIN ROLE</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Dilan">
-    </div>
-    <h3>I Komang Rio Jaya Saputra</h3>
-    <p class="role-name"><i>as</i> Dilan</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Adnan Husain" />
+          </div>
+          <h3>I Putu Bagus Pasya Dinatha</h3>
+          <p class="role-name"><i>as</i> Adnan Husain</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag" style="background:#e74c3c;">MAIN ROLE</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Milea">
-    </div>
-    <h3>Ni Putu Diah Rihana Anggia Dewi</h3>
-    <p class="role-name"><i>as</i> Milea</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Anhar" />
+          </div>
+          <h3>I Nyoman Surya Pramadya Pradnyadana P</h3>
+          <p class="role-name"><i>as</i> Anhar</p>
+        </div>
 
-  <!-- SUPPORTING -->
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Wati">
-    </div>
-    <h3>Nicola Naomas Damaris Aritonang</h3>
-    <p class="role-name"><i>as</i> Wati</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Beni" />
+          </div>
+          <h3>Komang Baskara Surya Radhitya</h3>
+          <p class="role-name"><i>as</i> Beni</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Rani">
-    </div>
-    <h3>Ni Made Dhea Arista Putri</h3>
-    <p class="role-name"><i>as</i> Rani</p>
-  </div>
+        <!-- ADULT ROLES -->
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Susi" />
+          </div>
+          <h3>Sharah Ferhat</h3>
+          <p class="role-name"><i>as</i> Susi</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Piyan">
-    </div>
-    <h3>I Pande Putu Maheza Suryadistra</h3>
-    <p class="role-name"><i>as</i> Piyan</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Pak Suripto" />
+          </div>
+          <h3>Putu Rama Satya Mahendra</h3>
+          <p class="role-name"><i>as</i> Pak Suripto</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Nandan">
-    </div>
-    <h3>I Komang Andhika Arya Permana</h3>
-    <p class="role-name"><i>as</i> Nandan</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Kepala Sekolah" />
+          </div>
+          <h3>Zeebe Ramadhan Yunarko</h3>
+          <p class="role-name"><i>as</i> Kepala Sekolah</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Adnan Husain">
-    </div>
-    <h3>I Putu Bagus Pasya Dinatha</h3>
-    <p class="role-name"><i>as</i> Adnan Husain</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Kang Adi" />
+          </div>
+          <h3>Teuku Derick Xavier Syah Putra</h3>
+          <p class="role-name"><i>as</i> Kang Adi</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Anhar">
-    </div>
-    <h3>I Nyoman Surya Pramadya Pradnyadana P</h3>
-    <p class="role-name"><i>as</i> Anhar</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Bi Eem" />
+          </div>
+          <h3>Ni Kadek Sintya Puspita Dewi</h3>
+          <p class="role-name"><i>as</i> Bi Eem</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Beni">
-    </div>
-    <h3>Komang Baskara Surya Radhitya</h3>
-    <p class="role-name"><i>as</i> Beni</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Bi Asih" />
+          </div>
+          <h3>Ni Komang Yudiartini</h3>
+          <p class="role-name"><i>as</i> Bi Asih</p>
+        </div>
 
-  <!-- ADULT ROLES -->
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Susi">
-    </div>
-    <h3>Sharah Ferhat</h3>
-    <p class="role-name"><i>as</i> Susi</p>
-  </div>
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Bu Rini" />
+          </div>
+          <h3>I Gusti Ayu Shinta Tribeca</h3>
+          <p class="role-name"><i>as</i> Bu Rini</p>
+        </div>
 
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Pak Suripto">
-    </div>
-    <h3>Putu Rama Satya Mahendra</h3>
-    <p class="role-name"><i>as</i> Pak Suripto</p>
-  </div>
-
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Kepala Sekolah">
-    </div>
-    <h3>Zeebe Ramadhan Yunarko</h3>
-    <p class="role-name"><i>as</i> Kepala Sekolah</p>
-  </div>
-
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Kang Adi">
-    </div>
-    <h3>Teuku Derick Xavier Syah Putra</h3>
-    <p class="role-name"><i>as</i> Kang Adi</p>
-  </div>
-
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Bi Eem">
-    </div>
-    <h3>Ni Kadek Sintya Puspita Dewi</h3>
-    <p class="role-name"><i>as</i> Bi Eem</p>
-  </div>
-
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Bi Asih">
-    </div>
-    <h3>Ni Komang Yudiartini</h3>
-    <p class="role-name"><i>as</i> Bi Asih</p>
-  </div>
-
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Bu Rini">
-    </div>
-    <h3>I Gusti Ayu Shinta Tribeca</h3>
-    <p class="role-name"><i>as</i> Bu Rini</p>
-  </div>
-
-  <div class="p-card">
-    <div class="rank-tag">SUPPORTING</div>
-    <div class="p-img-small">
-      <img src="https://via.placeholder.com" alt="Agus">
-    </div>
-    <h3>I Gede Umbu Desta Pratama</h3>
-    <p class="role-name"><i>as</i> Agus</p>
-  </div>
-
-</div>
-
-        
+        <div class="p-card">
+          <div class="rank-tag">SUPPORTING</div>
+          <div class="p-img-small">
+            <img src="https://via.placeholder.com" alt="Agus" />
+          </div>
+          <h3>I Gede Umbu Desta Pratama</h3>
+          <p class="role-name"><i>as</i> Agus</p>
+        </div>
+      </div>
     </section>
     <footer>
-    <div class="footer-content">
+      <div class="footer-content">
         <p>&copy; TENZOSKA | Designed with ❤️</p>
         <div class="footer-social">
-            <a href="https://www.instagram.com/tenzoska" target="_blank" title="Instagram">
-                <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="https://www.tiktok.com/@tenz0ska" target="_blank" title="TikTok">
-                <i class="fa-brands fa-tiktok"></i>
-            </a>
+          <a
+            href="https://www.instagram.com/tenzoska"
+            target="_blank"
+            title="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com/@tenz0ska"
+            target="_blank"
+            title="TikTok"
+          >
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
         </div>
-    </div>
-</footer>
-
-</body>
+      </div>
+    </footer>
+  </body>
 </html>
