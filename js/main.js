@@ -1,5 +1,4 @@
-// Import Firebase config
-import './firebase-config.js';
+
 
 // Authentication state observer
 firebase.auth().onAuthStateChanged((user) => {
