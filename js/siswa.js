@@ -39,6 +39,18 @@ const listSiswa = [
     { nama: "Zeebe Ramadhan Yunarko", role: "Absen 38", foto: "https://i.pravatar.cc" },
 ];
 
+// Function to toggle mobile menu
+function toggleMenu() {
+    console.log('toggleMenu called');
+    const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.querySelector('.hamburger');
+    console.log('navLinks:', navLinks);
+    console.log('hamburger:', hamburger);
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+    console.log('classes toggled');
+}
+
 function renderSiswa() {
     const container = document.getElementById('siswa-full-list');
     listSiswa.forEach(s => {
