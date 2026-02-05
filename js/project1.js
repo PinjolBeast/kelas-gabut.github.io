@@ -265,6 +265,12 @@ function startAutoSlide(sliderId, interval = 3000) {
     }, interval);
 }
 
+// Function to toggle mobile menu
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+}
+
 // Initialize rendering on DOM load
 document.addEventListener('DOMContentLoaded', () => {
     renderProductionHierarchy();

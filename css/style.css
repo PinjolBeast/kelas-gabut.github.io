@@ -86,6 +86,29 @@ nav {
   color: var(--orange);
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--orange);
+  margin: 3px 0;
+  transition: 0.3s;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* Hero */
 .hero {
   height: 70vh;
@@ -1040,4 +1063,103 @@ footer {
   outline: none;
   border-color: var(--blue);
   box-shadow: 0 0 10px rgba(0, 204, 255, 0.3);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  /* Navigation */
+  nav {
+    padding: 15px 5%;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    z-index: 1001;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    margin: 20px 0;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+  }
+
+  /* Section */
+  .section {
+    padding: 40px 5%;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
+  /* Hierarchy Levels */
+  .hierarchy-level {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  /* Staff Grid */
+  .staff-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* Slider */
+  .slider-btn {
+    display: none; /* Hide buttons on mobile, use touch scroll */
+  }
+
+  .slider-wrapper {
+    max-width: 100%;
+  }
+
+  .slider-wrapper .p-card {
+    width: 200px;
+  }
+
+  /* Trailer */
+  .trailer-wrapper {
+    padding: 0;
+  }
+
+  .trailer-container {
+    max-width: 100%;
+  }
+
+  .trailer-overlay h2 {
+    font-size: 1.2rem;
+  }
+
+  .trailer-overlay p {
+    font-size: 0.75rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 30px 5%;
+  }
+
+  .footer-social a {
+    font-size: 1.2rem;
+  }
 }
