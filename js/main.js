@@ -114,6 +114,14 @@ function closeModal() {
     }
 }
 
+// Function to toggle mobile menu
+function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    const hamburger = document.querySelector('.hamburger');
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active');
+}
+
 // Gunakan Event Listener DOMContentLoaded agar lebih aman daripada window.onload
 document.addEventListener('DOMContentLoaded', () => {
     loadMoments();
