@@ -34,26 +34,32 @@ const productionHierarchy = {
     ]
 };
 
-// Data for Cast
-const castList = [
-    { role: "MAIN ROLE", name: "I Komang Rio Jaya Saputra", character: "Dilan", img: "https://via.placeholder.com" },
-    { role: "MAIN ROLE", name: "Ni Putu Diah Rihana Anggia Dewi", character: "Milea", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "Nicola Naomas Damaris Aritonang", character: "Wati", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "Ni Made Dhea Arista Putri", character: "Rani", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "I Pande Putu Maheza Suryadistra", character: "Piyan", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "I Komang Andhika Arya Permana", character: "Nandan", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "I Putu Bagus Pasya Dinatha", character: "Adnan Husain", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "I Nyoman Surya Pramadya Pradnyadana P", character: "Anhar", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "Komang Baskara Surya Radhitya", character: "Beni", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "Sharah Ferhat", character: "Susi", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "Putu Rama Satya Mahendra", character: "Pak Suripto", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "Zeebe Ramadhan Yunarko", character: "Kepala Sekolah", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "Teuku Derick Xavier Syah Putra", character: "Kang Adi", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "Ni Kadek Sintya Puspita Dewi", character: "Bi Eem", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "Ni Komang Yudiartini", character: "Bi Asih", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "I Gusti Ayu Shinta Tribeca", character: "Bu Rini", img: "https://via.placeholder.com" },
-    { role: "SUPPORTING", name: "I Gede Umbu Desta Pratama", character: "Agus", img: "https://via.placeholder.com" }
-];
+// Data for Cast Hierarchy
+const castHierarchy = {
+    level1: [
+        { role: "MAIN ROLE", name: "I Komang Rio Jaya Saputra", character: "Dilan", img: "https://via.placeholder.com" },
+        { role: "MAIN ROLE", name: "Ni Putu Diah Rihana Anggia Dewi", character: "Milea", img: "https://via.placeholder.com" }
+    ],
+    level2: [
+        { role: "SUPPORTING", name: "Nicola Naomas Damaris Aritonang", character: "Wati", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "Ni Made Dhea Arista Putri", character: "Rani", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "I Pande Putu Maheza Suryadistra", character: "Piyan", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "I Komang Andhika Arya Permana", character: "Nandan", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "I Putu Bagus Pasya Dinatha", character: "Adnan Husain", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "I Nyoman Surya Pramadya Pradnyadana P", character: "Anhar", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "Komang Baskara Surya Radhitya", character: "Beni", img: "https://via.placeholder.com" }
+    ],
+    level3: [
+        { role: "SUPPORTING", name: "Sharah Ferhat", character: "Susi", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "Putu Rama Satya Mahendra", character: "Pak Suripto", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "Zeebe Ramadhan Yunarko", character: "Kepala Sekolah", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "Teuku Derick Xavier Syah Putra", character: "Kang Adi", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "Ni Kadek Sintya Puspita Dewi", character: "Bi Eem", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "Ni Komang Yudiartini", character: "Bi Asih", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "I Gusti Ayu Shinta Tribeca", character: "Bu Rini", img: "https://via.placeholder.com" },
+        { role: "SUPPORTING", name: "I Gede Umbu Desta Pratama", character: "Agus", img: "https://via.placeholder.com" }
+    ]
+};
 
 // Function to render Production Hierarchy
 function renderProductionHierarchy() {
@@ -92,8 +98,10 @@ function renderProductionHierarchy() {
     });
     html += '</div><div class="connector-line"></div>';
 
-    // Level 3: Production Team
-    html += '<div class="staff-grid">';
+    // Level 3: Production Team (Slider)
+    html += '<div class="staff-grid slider-container">';
+    html += '<button class="slider-btn prev-btn" onclick="slidePrev(\'production-level3\')"><i class="fa-solid fa-chevron-left"></i></button>';
+    html += '<div class="slider-wrapper" id="production-level3">';
     productionHierarchy.level3.forEach(member => {
         html += `
             <div class="p-card">
@@ -105,6 +113,8 @@ function renderProductionHierarchy() {
             </div>
         `;
     });
+    html += '</div>';
+    html += '<button class="slider-btn next-btn" onclick="slideNext(\'production-level3\')"><i class="fa-solid fa-chevron-right"></i></button>';
     html += '</div>';
 
     container.innerHTML = html;
@@ -129,6 +139,71 @@ function renderProductionTeam() {
     });
 }
 
+// Function to render Cast Hierarchy
+function renderCastHierarchy() {
+    const container = document.getElementById('cast-hierarchy');
+    if (!container) return;
+
+    let html = '';
+
+    // Level 1: Main Roles
+    html += '<div class="hierarchy-level">';
+    castHierarchy.level1.forEach(actor => {
+        html += `
+            <div class="p-card accent-orange">
+                <div class="rank-tag">${actor.role}</div>
+                <div class="p-img-container">
+                    <img src="${actor.img}" alt="${actor.name}" />
+                </div>
+                <h3>${actor.name}</h3>
+                <p class="role-name"><i>as</i> ${actor.character}</p>
+            </div>
+        `;
+    });
+    html += '</div><div class="connector-line"></div>';
+
+    // Level 2: Supporting Roles (First Group) - Slider
+    html += '<div class="hierarchy-level slider-container">';
+    html += '<button class="slider-btn prev-btn" onclick="slidePrev(\'cast-level2\')"><i class="fa-solid fa-chevron-left"></i></button>';
+    html += '<div class="slider-wrapper" id="cast-level2">';
+    castHierarchy.level2.forEach(actor => {
+        html += `
+            <div class="p-card accent-blue">
+                <div class="rank-tag">${actor.role}</div>
+                <div class="p-img-container">
+                    <img src="${actor.img}" alt="${actor.name}" />
+                </div>
+                <h3>${actor.name}</h3>
+                <p class="role-name"><i>as</i> ${actor.character}</p>
+            </div>
+        `;
+    });
+    html += '</div>';
+    html += '<button class="slider-btn next-btn" onclick="slideNext(\'cast-level2\')"><i class="fa-solid fa-chevron-right"></i></button>';
+    html += '</div><div class="connector-line"></div>';
+
+    // Level 3: Supporting Roles (Second Group) - Slider
+    html += '<div class="staff-grid slider-container">';
+    html += '<button class="slider-btn prev-btn" onclick="slidePrev(\'cast-level3\')"><i class="fa-solid fa-chevron-left"></i></button>';
+    html += '<div class="slider-wrapper" id="cast-level3">';
+    castHierarchy.level3.forEach(actor => {
+        html += `
+            <div class="p-card">
+                <div class="p-img-small">
+                    <img src="${actor.img}" alt="${actor.name}" />
+                </div>
+                <h3>${actor.name}</h3>
+                <p class="role-name"><i>as</i> ${actor.character}</p>
+            </div>
+        `;
+    });
+    html += '</div>';
+    html += '<button class="slider-btn next-btn" onclick="slideNext(\'cast-level3\')"><i class="fa-solid fa-chevron-right"></i></button>';
+    html += '</div>';
+
+    container.innerHTML = html;
+}
+
 // Function to render Cast List
 function renderCastList() {
     const container = document.getElementById('cast-list');
@@ -149,8 +224,54 @@ function renderCastList() {
     });
 }
 
+// Slider functions
+function slideNext(sliderId) {
+    const slider = document.getElementById(sliderId);
+    if (!slider) return;
+
+    const cardWidth = slider.querySelector('.p-card')?.offsetWidth || 200;
+    const scrollAmount = cardWidth + 20; // 20px for margin
+    slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+}
+
+function slidePrev(sliderId) {
+    const slider = document.getElementById(sliderId);
+    if (!slider) return;
+
+    const cardWidth = slider.querySelector('.p-card')?.offsetWidth || 200;
+    const scrollAmount = cardWidth + 20; // 20px for margin
+    slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+}
+
+// Auto-slide function
+function startAutoSlide(sliderId, interval = 3000) {
+    const slider = document.getElementById(sliderId);
+    if (!slider) return;
+
+    const cards = slider.querySelectorAll('.p-card');
+    if (cards.length <= 2) return; // Don't auto-slide if 2 or fewer cards
+
+    const cardWidth = cards[0]?.offsetWidth || 200;
+    const scrollAmount = cardWidth + 20;
+
+    return setInterval(() => {
+        if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+            // At the end, scroll back to start
+            slider.scrollTo({ left: 0, behavior: 'smooth' });
+        } else {
+            // Scroll next
+            slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        }
+    }, interval);
+}
+
 // Initialize rendering on DOM load
 document.addEventListener('DOMContentLoaded', () => {
     renderProductionHierarchy();
-    renderCastList();
+    renderCastHierarchy();
+
+    // Start auto-slide for sliders
+    startAutoSlide('production-level3');
+    startAutoSlide('cast-level2');
+    startAutoSlide('cast-level3');
 });
